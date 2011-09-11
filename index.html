@@ -1,75 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
+<script type="text/javascript">
+function handleLoad()
+{
+    var daUsarNaeeme = "contact";
+    var daEemale = daUsarNaeeme + "@" + "merc" + "enaryl" + "imit" + "ed.c" + "om";
+    document.getElementById("contactButton").onclick = function () {window.open('mailto:' + daEemale)};
+}
+</script>
 
-  <title>Mercenary/mercenarylimited.com @ GitHub</title>
+<style type="text/css">
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #1d8cc6;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #e27339; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #e27339; }
-    h3 { text-align: center; color: #e27339; }
-    a { color: #e27339; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+body
+{
+    padding: 0;
+    margin: 0; 
+    background-color: #bcbdc0;
+    text-align: center;
+    color: #76777a;
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+    
+
+#header
+{
+    background: #a3a3a7; /* for non-css3 browsers */
+    background-image: url(bg_tile.png), -webkit-gradient(linear, left top, right top, from(#a3a3a7), to(#3f3c3d)); /* Saf4+, Chrome */
+    background-image: url(bg_tile.png), -webkit-linear-gradient(left, #a3a3a7, #3f3c3d); /* Chrome 10+, Saf5.1+ */
+    background-image: url(bg_tile.png), -moz-linear-gradient(left, #a3a3a7, #3f3c3d); /* FF3.6+ */
+    background-image: url(bg_tile.png), -ms-linear-gradient(left, #a3a3a7, #3f3c3d); /* IE10 */
+    background-image: url(bg_tile.png), -o-linear-gradient(left, #a3a3a7, #3f3c3d); /* Opera 11.10+ */
+    background-image: url(bg_tile.png), linear-gradient(left, #a3a3a7, #3f3c3d); /* W3C */
+    
+    width: 100%;
+    height: 24px;
+}
+
+#logo
+{
+    background: #fff; /* for non-css3 browsers */
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#d4d5d8'); /* for IE */
+    background: -webkit-gradient(linear, left top, right top, from(#fff), to(#d4d5d8)); /* for webkit browsers */
+    background: -moz-linear-gradient(left,  #fff,  #d4d5d8); /* for firefox 3.6+ */ 
+    background-image: url(logo_large.png), -webkit-gradient(linear, left top, right top, from(#fff), to(#d4d5d8)); /* Saf4+, Chrome */
+    background-image: url(logo_large.png), -webkit-linear-gradient(left, #fff, #d4d5d8); /* Chrome 10+, Saf5.1+ */
+    background-image: url(logo_large.png), -moz-linear-gradient(left, #fff, #d4d5d8); /* FF3.6+ */
+    background-image: url(logo_large.png), -ms-linear-gradient(left, #fff, #d4d5d8); /* IE10 */
+    background-image: url(logo_large.png), -o-linear-gradient(left, #fff, #d4d5d8); /* Opera 11.10+ */
+    background-image: url(logo_large.png), linear-gradient(left, #fff, #d4d5d8); /* W3C */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    
+    width: 100%;
+    height: 232px;
+}
+
+button
+{
+    background: #fff;
+    display: inline-block;
+    padding: 2px;
+    color: #76777a;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1;
+    border: 1px solid #bcbdc0;
+    position: relative;
+    cursor: pointer;
+    height: 18px;
+    width: 96px;
+}
+
+#contactButton
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+    
+#bottom
+{
+    background: #5b5b5d; /* for non-css3 browsers */
+    
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b5b5d', endColorstr='#bcbdc0'); /* for IE */
+    background-image: url(bg_bottom_tile.png), -webkit-gradient(linear, left top, left bottom, from(#5b5b5d), to(#bcbdc0)); /* Saf4+, Chrome */
+    background-image: url(bg_bottom_tile.png), -webkit-linear-gradient(top, #5b5b5d, #bcbdc0); /* Chrome 10+, Saf5.1+ */
+    background-image: url(bg_bottom_tile.png), -moz-linear-gradient(top, #5b5b5d, #bcbdc0); /* FF3.6+ */
+    background-image: url(bg_bottom_tile.png), -ms-linear-gradient(top, #5b5b5d, #bcbdc0); /* IE10 */
+    background-image: url(bg_bottom_tile.png), -o-linear-gradient(top, #5b5b5d, #bcbdc0); /* Opera 11.10+ */
+    background-image: url(bg_bottom_tile.png), linear-gradient(top, #5b5b5d, #bcbdc0); /* W3C */
+
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}    
+</style>
 </head>
-
-<body>
-  <a href="http://github.com/Mercenary/mercenarylimited.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/Mercenary/mercenarylimited.com/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/Mercenary/mercenarylimited.com/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    
+<body onload="handleLoad();">
+    <div id="header">
+        <button id="contactButton">Contact Us</button>
     </div>
-
-    <h1><a href="http://github.com/Mercenary/mercenarylimited.com">mercenarylimited.com</a>
-      <span class="small">by <a href="http://github.com/Mercenary">Mercenary</a></span></h1>
-
-    <div class="description">
-      Mercenary Limited public website.
+    <div id="logo">
     </div>
-
-    <h2>Contact</h2>
-<p> (Mercenary@densone.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/Mercenary/mercenarylimited.com/zipball/master">zip</a> or
-      <a href="http://github.com/Mercenary/mercenarylimited.com/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/Mercenary/mercenarylimited.com</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/Mercenary/mercenarylimited.com">Mercenary/mercenarylimited.com</a>
+    <div id="bottom">
+        <img src="logo_reflection.png" width="543" height="174" alt="Mercenary Limited reflection"/>
     </div>
-
-  </div>
-
-  
+    
+    Copyright 2011 Mercenary Limited
 </body>
 </html>
